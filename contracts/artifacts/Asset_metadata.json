@@ -1,0 +1,191 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "ret",
+						"type": "int256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "account",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "asset_value",
+						"type": "uint256"
+					}
+				],
+				"name": "RegisterEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "ret",
+						"type": "int256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "from_account",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "to_account",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TransferEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "account",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "asset_value",
+						"type": "uint256"
+					}
+				],
+				"name": "register",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "account",
+						"type": "string"
+					}
+				],
+				"name": "select",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "from_account",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "to_account",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"select(string)": {
+					"notice": "根据资产账户查询资产 参数： account: 资产账户 返回值： 参数一： 成功返回0，账户不存在返回-1 参数二： 资产金额 "
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Asset.sol": "Asset"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Asset.sol": {
+			"keccak256": "0xba43078a9d2604199bc7ee029b3612be24e95c7da2cba8cf7cdfdbcf37af07c8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2754492b2dbc4d6ce5262b4d16c7f0206e49aedb5c20d9d5d30e15b3a70bf15b",
+				"dweb:/ipfs/QmSUw7ZGeB8GeTPhU58Aege5dGG6a4iMR254aRpGZj7ZuS"
+			]
+		},
+		"contracts/Table.sol": {
+			"keccak256": "0x5a170e5ee3a454fbbb484426963b49fbb9cac154ecfc2c8b0e41c23c46d8f5a9",
+			"urls": [
+				"bzz-raw://21048807ac4f38a63f63c45818403c97aee0d6a9428ddb65e6f0c380f5ab30db",
+				"dweb:/ipfs/QmQUKD4EYbLHTzjEYC6KW8p3kmSSmRxDRXtoELAdGwHuPK"
+			]
+		}
+	},
+	"version": 1
+}

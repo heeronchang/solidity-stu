@@ -1,0 +1,168 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "contract Entry",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "insert",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "newCondition",
+				"outputs": [
+					{
+						"internalType": "contract Condition",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "newEntry",
+				"outputs": [
+					{
+						"internalType": "contract Entry",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "contract Condition",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "remove",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "contract Condition",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "select",
+				"outputs": [
+					{
+						"internalType": "contract Entries",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "contract Entry",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "contract Condition",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "update",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Table.sol": "Table"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Table.sol": {
+			"keccak256": "0x5a170e5ee3a454fbbb484426963b49fbb9cac154ecfc2c8b0e41c23c46d8f5a9",
+			"urls": [
+				"bzz-raw://21048807ac4f38a63f63c45818403c97aee0d6a9428ddb65e6f0c380f5ab30db",
+				"dweb:/ipfs/QmQUKD4EYbLHTzjEYC6KW8p3kmSSmRxDRXtoELAdGwHuPK"
+			]
+		}
+	},
+	"version": 1
+}

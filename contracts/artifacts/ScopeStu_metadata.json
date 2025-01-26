@@ -1,0 +1,62 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "minimalScoping",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "warnScoping",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Stu.sol": "ScopeStu"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Stu.sol": {
+			"keccak256": "0xd75791f2ae2efd3247e1a75398fd081bd3e48a38eb882265e95b6e45788bc074",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://25fd20b3b75f512c45e6de2125ce9f25ad1559cbe29e5fecfd28ad69b2314550",
+				"dweb:/ipfs/QmesRe8YCrxYCEankRgutuwr7ARYoaRvmtoMX7vRLV5i7B"
+			]
+		}
+	},
+	"version": 1
+}

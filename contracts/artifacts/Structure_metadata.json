@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "bidder",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "HighestBidIncrease",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "abort",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "bid",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "seller",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Structure.sol": "Structure"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Structure.sol": {
+			"keccak256": "0x598856b3f958809ea71e732024c7bc58fe8a6ba8b4c31377c175c4eb855861a3",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f795e1206e994d99e8a644fdff3e29d31bb65be6b8570aa84998760cf9c67402",
+				"dweb:/ipfs/QmVAUWsUbpcLsJBaipvTmos58YkjJADHhbvcgf1AqYiS2f"
+			]
+		}
+	},
+	"version": 1
+}
