@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract OwnedToken",
+						"name": "tokenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "name",
+						"type": "bytes32"
+					}
+				],
+				"name": "changeName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "name",
+						"type": "bytes32"
+					}
+				],
+				"name": "createToken",
+				"outputs": [
+					{
+						"internalType": "contract OwnedToken",
+						"name": "tokenAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "currentOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "isTokenTransferOK",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "ok",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/NestCreateContract.sol": "TokenCreator"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/NestCreateContract.sol": {
+			"keccak256": "0x27dd4020c83fa77a65d6ed00b629bcfe74fdb3c1dbc0d274f88f7701ea825fa6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f82d3f1fe34cc5a3920bf02b2e654d9a32780eeac75fb1234a220db180f7bbf4",
+				"dweb:/ipfs/QmRZ4zvLQPHnznzAZLM9EUq1hPuAimKr6LCXm8Zocid7Je"
+			]
+		}
+	},
+	"version": 1
+}

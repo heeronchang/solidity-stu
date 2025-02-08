@@ -1,0 +1,61 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FeedConsumer.sol": "DataFeed"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/FeedConsumer.sol": {
+			"keccak256": "0x76570d0b2bc973967984ec2df1e81059735c77fdc47625daffe7ac857fa21e65",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1619b3f91d738d6343d78db8a74805e1fec234b594eef1e6102880d1fbb6b63e",
+				"dweb:/ipfs/QmS6Qumbm2MpN7gWw4JhSUeGToh5CugKA1jzR2FtbnB6xb"
+			]
+		}
+	},
+	"version": 1
+}

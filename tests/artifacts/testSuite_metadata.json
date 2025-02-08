@@ -1,10 +1,29 @@
 {
 	"compiler": {
-		"version": "0.6.10+commit.00c0fcaf"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerSet",
+				"type": "event"
+			},
 			{
 				"inputs": [],
 				"name": "beforeAll",
@@ -13,76 +32,106 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "checkFailure",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "checkSenderAndValue",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "checkSuccess",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "checkSuccess2",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkChangeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkChangeOwnerAgain",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkInitialOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"methods": {}
+			"kind": "dev",
+			"methods": {
+				"changeOwner(address)": {
+					"details": "Change owner",
+					"params": {
+						"newOwner": "address of new owner"
+					}
+				},
+				"getOwner()": {
+					"details": "Return owner address ",
+					"returns": {
+						"_0": "address of owner"
+					}
+				}
+			},
+			"version": 1
 		},
 		"userdoc": {
+			"kind": "user",
 			"methods": {
 				"beforeAll()": {
 					"notice": "'beforeAll' runs before all other tests More special functions are: 'beforeEach', 'beforeAll', 'afterEach' & 'afterAll'"
 				},
-				"checkSenderAndValue()": {
-					"notice": "Custom Transaction Context: https://remix-ide.readthedocs.io/en/latest/unittesting.html#customization #sender: account-1 #value: 100"
+				"checkChangeOwnerAgain()": {
+					"notice": "Update owner again by defining custom sender #sender: account-2 (sender is account at index '1')"
 				}
-			}
+			},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"tests/Coin_test.sol": "testSuite"
+			"tests/2_Owner_test.sol": "testSuite"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Coin.sol": {
-			"keccak256": "0xe4433e74a576ec7fb64693aef9816123cb7b30fa5cfbde4d74a28d4a77b8350f",
+		"contracts/2_Owner.sol": {
+			"keccak256": "0xb014e6de8b0504dd7912d2d59893378618cfcc120e9dcaf1805609288d5a3083",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://21ac1eeaf83ccfe36a784551eb0f1df05c54c0d5698292070741ea032832521d",
-				"dweb:/ipfs/Qmf17LJe6k7fk2R6DU7mBrSUSzyTth1BnF6E3RTyUjtpiG"
+				"bzz-raw://b29c4072f126eeaf9854ffa1c0de1f856d2ab952df89ceec5057488fdaaaef73",
+				"dweb:/ipfs/QmPtvPk9BmVPdjbhZH7vyqDhRXqXrUfrqg4hE43LLxbvV5"
 			]
 		},
 		"hardhat/console.sol": {
@@ -109,12 +158,12 @@
 				"dweb:/ipfs/QmdkW1tT5iadBvaHMCoskhDGZKnfdg8o1D9CcoQYtdJet7"
 			]
 		},
-		"tests/Coin_test.sol": {
-			"keccak256": "0xbaf68196e1d60cea2a938e6962ec723bc6ffda1f0f8930cc93350b5460b3711d",
+		"tests/2_Owner_test.sol": {
+			"keccak256": "0xf27d3c17475f100cc39464209b596fd44d1e40cd32cbbc4853c3a997702fba3f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://22bb84c0d0b52d2a6b5e65935234231e984d7a9e36e8316ca928bab5513b00c5",
-				"dweb:/ipfs/QmamyrRiZLWxFikiHcGD8o3F7R16eywhRcvUhUQEWrSAhg"
+				"bzz-raw://e192bef4c2bb38f17f9ca9d0a83e5602e699753ec02d928fb8b7c015b6d63ccc",
+				"dweb:/ipfs/QmfNQzqMXkLmKjcJMtQTs4Af2TrWxZMtGwG41EW6ZEFysp"
 			]
 		}
 	},

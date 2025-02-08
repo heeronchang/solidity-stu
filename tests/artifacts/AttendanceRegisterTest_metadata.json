@@ -1,0 +1,121 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "beforeAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testAddFailureUsingCall",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testAddFailureUsingTryCatch2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testAddSuccessUsingCall",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testAddWithErrorTryCatch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"beforeAll()": {
+					"notice": "'beforeAll' runs before all other tests More special functions are: 'beforeEach', 'beforeAll', 'afterEach' & 'afterAll'"
+				},
+				"testAddFailureUsingCall()": {
+					"notice": "Test failure case of 'add' using low level call"
+				},
+				"testAddFailureUsingTryCatch2()": {
+					"notice": "Test another failure case of 'add' using try-catch"
+				},
+				"testAddSuccessUsingCall()": {
+					"notice": "For solidity version less than 0.6.0, low level call can be used See: https://solidity.readthedocs.io/en/v0.6.0/units-and-global-variables.html#members-of-address-types Test success case of 'add' using low level call"
+				},
+				"testAddWithErrorTryCatch()": {
+					"notice": "Test 'add' using try-catch"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/AttendanceRegister_test.sol": "AttendanceRegisterTest"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AttendanceRegister.sol": {
+			"keccak256": "0xf5605cc01e41fc64be0723321c59a8ee2f439ae46667cd472219c96f1af05b9c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d0e7ed4db14ff3641123a3e5d543e689f067806eab2ca3ffd4f7aa5874ef2684",
+				"dweb:/ipfs/QmZcK1NpfgaQ9W8JTPBg69fE3qy5M6Tb1DBoDJkC63ARrG"
+			]
+		},
+		"remix_accounts.sol": {
+			"keccak256": "0xab088ffd1cd1033f54c2486f151b5d02281a3b76724c8e6f48479c25a4f7809e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5ddaf9976b1838f7028cbedfaf7f6e1cf8c898e100221176ff1406ee8b599f23",
+				"dweb:/ipfs/QmX2FYLXYyo5Cn55ZX2CfngpscSh4mQhcMVzQdQsh2vqcG"
+			]
+		},
+		"remix_tests.sol": {
+			"keccak256": "0xe2783cdc204cba8c72494119339f1d90f9022b15d6c718c668b7f097d8e29787",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bb6a22e64c7f16bcaab63b1c1a1b269d5be8a6d37bdd9dec1718477ab916b18e",
+				"dweb:/ipfs/QmdkW1tT5iadBvaHMCoskhDGZKnfdg8o1D9CcoQYtdJet7"
+			]
+		},
+		"tests/AttendanceRegister_test.sol": {
+			"keccak256": "0x0fcaf60d3f294782391dd0476404fefc285b1a49a0e1f76ab1312e27271f2923",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3bbbc381c83dd366d8eb11f326f9fd8a30094ed8671b16bf3e951fb76c5c44e2",
+				"dweb:/ipfs/QmTmsSKeHfHocVrwWM9Fdi5uWMrzVapHGMwABcaAJrCkCN"
+			]
+		}
+	},
+	"version": 1
+}
